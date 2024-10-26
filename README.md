@@ -2,7 +2,7 @@
 
 This repository contains the base files to create a docker image prepared to run Stable Diffusion 3.5 Large, ComfyUI (with some custom nodes installed), ai-toolkit (to train LoRA) and JupyterLab.
 
-**Note**: The image created from this template can be used in the runpod, the Stable Diffusion, clips and vae models are not embedded in the root of the image. You can do this if you want by creating an image from this one and customizing it so that the templates are included. As it stands currently, you need to run the **download-all.sh** script after creating the container to download the Stable Diffusion, clips, vae... models.
+**Note**: The image created from this template can be used in the runpod, the Stable Diffusion, clips and vae models are not embedded in the root of the image. If you set the HF_TOKEN enviorment variable the download of models will be run automatically, or if you can do this if you want by creating an image from this one and customizing it so that the templates are included. As it stands currently, you need to run the **download-all.sh** script after creating the container to download the Stable Diffusion, clips, vae... models.
 
 ## ComfyUI pre-installed custom nodes
 
